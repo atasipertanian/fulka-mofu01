@@ -154,7 +154,7 @@ html {
     height: 80px;
     display: flex;
     /* align-items: flex-start; */
-    margin: 20px -20px 10px 10px;
+    margin: 20px 0 20px 0;
     /* padding-top: var(--dl-space-space-oneandhalfunits); */
     border-color: var(--dl-color-gray-black);
     border-width: 0px;
@@ -169,19 +169,41 @@ html {
     background-position: center center;
     background-size: contain;
     border-radius: 10px;
-
+}
+@media (max-width: 320px) {
+    .home-section1 {
+        padding-left: 10px; /* Sesuaikan padding agar sama dengan max-width: 424px */
+        padding-right: 10px;
+        background-size: cover; /* Tetap mengisi area */
+        background-position: center; /* Posisikan gambar di tengah */
+    }
+}
+@media (max-width: 375px) {
+    .home-section1 {
+        padding-left: 8px; /* Kurangi padding untuk layar lebih kecil */
+        padding-right: 8px;
+        background-size: cover; /* Tetap mengisi area */
+        background-position: center; /* Posisikan gambar di tengah */
+    }
 }
 
+@media (max-width: 424px) {
+    .home-section1 {
+        padding-left: 10px; /* Kurangi padding agar tidak terlalu besar */
+        padding-right: 10px;
+        background-size: cover; /* Isi area dengan proporsi */
+    }
+}
 .home-section1-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000000;
+    color: #073300;
     width: auto;
-    font-size: 16px;
+    font-size: 28px;
     font-style: normal;
-    text-align: center;
+    text-align: left;
     font-family: 'Arimo';
     font-weight: 600;
 }
