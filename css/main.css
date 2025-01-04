@@ -196,19 +196,40 @@ html {
 }
 .home-section1-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top:50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     color: #073300;
-    width: auto;
-    font-size: 28px;
+    width: 100%;
+    font-size: 26px;
     font-style: normal;
     text-align: left;
     font-family: 'Arimo';
-    font-weight: 600;
+    font-weight: Bold;
+    opacity: 1;
+    margin: 0 auto;
 }
-
-
+@media (max-width: 320px) {
+    .home-section1-text {
+        left: 50%; /* Sesuaikan padding agar sama dengan max-width: 424px */
+        top:50%;
+        width: 70%;        
+    }
+}
+@media (max-width: 375px) {
+    .home-section1-text {
+        left: 60%; /* Sesuaikan padding agar sama dengan max-width: 424px */
+        top:50%;
+        width: 70%;        
+    }
+}
+@media (max-width: 425px) {
+    .home-section1-text {
+        left: 63%; /* Sesuaikan padding agar sama dengan max-width: 424px */
+        top:50%;
+        width: 70%;        
+    }
+}
 .home-section1-text01 {
     color: #000000;
 }
